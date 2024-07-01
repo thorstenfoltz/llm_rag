@@ -1,0 +1,6 @@
+question 1: 42f05b9372a9a4a470db3b52817899b99a76ee73
+question 2: index
+question 3: 84.05
+question 4: How do I copy files from a different folder into docker container’s working directory?
+question 5: 1462
+question 6: 322
