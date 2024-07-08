@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+ollama_files/
 
 # C extensions
 *.so
