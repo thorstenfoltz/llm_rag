@@ -1,0 +1,5 @@
+question 1: 0.07
+question 2: (375, 768)
+question 3: 0.65
+question 4: 0.9398
+question 5: 0227b872
