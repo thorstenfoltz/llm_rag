@@ -26,7 +26,7 @@ from collections import defaultdict
 
 url = "https://www.who.int/europe/publications/i"
 
-load = "no" # change to yes, if you want to load data 
+load = "yes" # change to no, if you don't want to load data 
 
 load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
