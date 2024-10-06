@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: pg_vector
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./rag_database/data:/var/lib/postgresql/data
+      - ./init_pgvector.sql:/docker-entrypoint-initdb.d/init_pgvector.sql
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: llm
+
+  rag_app:
+    image: rag
+    volumes:
+      - ./rag.py:/app/rag.py
+      - ./.env:/app/.env
+    tty: true
+    stdin_open: true
+    depends_on:
+      - postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: llm
+      POSTGRES_HOST: postgres
+    command: ["python", "/app/rag.py"]
+
+  
