@@ -22,7 +22,7 @@ In this project I use pdf files from the [WHO](https://www.who.int/europe/public
 * If you want to re-run, simply execute `make run_rag`
 
 ## Architecture
-![](https://github.com/username/repository/blob/master/arch.png)
+![](https://github.com/thorstenfoltz/llm_rag/blob/master/arch.png)
 
 ## How does it work?
 It works in the following way:
